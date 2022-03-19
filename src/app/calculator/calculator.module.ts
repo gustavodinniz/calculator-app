@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CalculatorComponent } from './components';
+import { CalculatorService } from "./services";
 
 
 
@@ -13,6 +14,9 @@ import { CalculatorComponent } from './components';
   ],
   imports: [
     CommonModule
+  ],
+  providers: [
+    CalculatorService
   ]
 })
 export class CalculatorModule { }
